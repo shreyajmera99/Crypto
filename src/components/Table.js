@@ -195,12 +195,16 @@ const BasicTable = (props) => {
         count={totalPages}
         page={page}
         siblingCount={1}
+                  boundaryCount={1}
+
         shape="rounded"
         onChange={handlePageChange}
         sx={{
-          padding: 5,
-          width: "100%",
+          paddingBottom: 5,
+          paddingTop:5,
+          // width: "100%",
           display: "flex",
+
           justifyContent: "center",
           backgroundColor:  "rgb(5 11 32)",
           "& .MuiPaginationItem-root": {
